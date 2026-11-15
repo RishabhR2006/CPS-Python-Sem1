@@ -1,8 +1,8 @@
 def bubblesort(l):
     for i in range(0,len(l)-1):
-        for j in range(i+1,len(l)-1):
-            if l[i]>l[j]:
-                l[i],l[j]=l[j],l[i]
+        for j in range(0,len(l)-1-i):
+            if l[j]>l[j+1]:
+                l[j],l[j+1]=l[j+1],l[j]
     print (l)
 
 def selectionsort(l):
@@ -27,6 +27,6 @@ def insertionsort(l):
     print (l)
 
 l=[2,1,4,6,3,5]
-bubblesort(l)
-selectionsort(l)
-insertionsort(l)
+bubblesort(l.copy())
+selectionsort(l.copy())
+insertionsort(l.copy())

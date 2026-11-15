@@ -18,5 +18,11 @@ if a%2==0:
     even=even+a
 else:
     odd=odd+a
+n=n-(a*10)
+a=n
+if a%2==0:
+    even=even+a
+else:
+    odd=odd+a
 print("sum of even digits: ",even)
 print("sum of odd digits: ",odd)

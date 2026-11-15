@@ -1,20 +1,18 @@
-i=0
 pos=-1
-def search(L,n,i):
-    globals()['i']
-    if L[i]==n:
-        globals()['pos']=i
-        return True
-    i+=1
-    search(L,n,i)
+def search(L,n,i=0):
+    global pos
     if i==len(L):
         return False
+    if L[i]==n:
+        pos=i
+        return True
+    return search(L,n,i+1)
 
 
 L=[1,2,3,4,5,6,7,8,9]
 n=6
 
-if search(n,L,i):
+if search(L,n):
     print("number found at ",pos+1)
 else:
     print("not found")

@@ -6,7 +6,7 @@ def readfile():
     words=text.split()
     print("Total number of words = ",len(words))
 
-    print("The words endling with t are: ")
+    print("The words ending with t are: ")
     for i in words:
         if i[-1]=='t':
             print(i)

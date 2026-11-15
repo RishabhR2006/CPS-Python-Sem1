@@ -12,5 +12,9 @@ for r in x:
      print(r)   
 print("transposed matrix:")
 for j in range(len(x[0])):
+    row=[]
     for i in range(len(x)):
+        row.append(x[i][j])
+    print(row)
+
         
